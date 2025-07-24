@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeepGram + WebVTT</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <h1 class="header">🗣️ DeepGram WebVTT Viewer</h1>
+    <div class="file-upload">
+      <div class="file-label">
+        <label for="videoInput">Upload Video File</label>
+        <input type="file" id="videoInput" accept="video/*" class="file-input" />
+      </div>
+      <div class="file-label">
+        <label for="vttInput">Upload Subtitle (VTT) File</label>
+        <input type="file" id="vttInput" accept=".vtt" class="file-input" />
+      </div>
+    </div>
+    <div class="video-container">
+      <video id="video" width="700" controls></video>
+    </div>
+    <div id="transcript" class="transcript-box"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
